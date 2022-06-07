@@ -1,0 +1,99 @@
+body {
+  background-color: rgb(46, 55, 127);
+  font-family: "BIZ UDGothic", sans-serif;
+  margin: 10%;
+  padding: 0;
+}
+
+.grid-login {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Log in */
+
+.login-info {
+  margin: 0px 0px 10px 180px;
+}
+
+.login-info > h1 {
+  font-size: 70pt;
+  margin: 0px 0px 10px 50px;
+}
+
+.login-info > h2 {
+  margin: 40px 10px 30px 20px;
+}
+
+.login input {
+  margin: 0px 0px 10px 50px;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+  display: flex;
+  text-align: center;
+  border: #fff;
+  border-radius: 20px;
+  background: #849e38;
+  height: 40px;
+  width: 250px;
+  outline: none;
+  color: #fff;
+  font-size: 15px;
+}
+
+.login input[type="text"]::placeholder,
+.login input[type="password"]::placeholder {
+  color: #fff;
+}
+
+/* START */
+.login input[type="submit"] {
+  border: #fff solid;
+  outline: #fff;
+  height: 40px;
+  width: 90px;
+  background-color: #b63512;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 20px;
+  margin: 10px 0px 20px 120px;
+}
+
+.login input[type="submit"]:hover {
+  background-color: #ff4d1b;
+}
+
+.sign-up a {
+  font-size: 11pt;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: gray;
+  margin: 0px 0px 10px 100px;
+}
+
+.sign-up a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.container {
+  color: blanchedalmond;
+  justify-content: start;
+  margin: 0px 0px 10px 50px;
+}
+
+#reloj {
+  position: relative;
+  z-index: 0;
+  left: 65em;
+  bottom: 20em;
+}
+
+#mushroom {
+  z-index: 2;
+  position: relative;
+  left: 78.5em;
+  bottom: 44em;
+}
