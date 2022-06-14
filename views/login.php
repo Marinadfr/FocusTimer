@@ -75,7 +75,7 @@ if ($_POST) {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $sql = "SELECT username, password, role FROM user WHERE username='$username'";
+    $sql = "SELECT id_user, username, password, role FROM user WHERE username='$username'";
 
     $query = $client->prepare($sql);
     $query->execute();
@@ -95,8 +95,9 @@ if ($_POST) {
         }
 
         $_SESSION['username'] = $username;
-
+        $_SESSION['id'] = $result[0]['id_user'];
         $_SESSION['role'] = $result[0]['role'];
+
         header('Location:http://localhost/FocusTimer/');
     } catch (Throwable $errno) {
         $class = "box-error-login";
